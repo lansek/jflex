@@ -29,7 +29,6 @@ public class FirstHttpHandler implements HttpHandler {
 	@Override
 	public void handle(HttpExchange exchange) throws IOException {
 		
-		
 	//	exchange.getRequestBody();
 		logger.info("Request is [{}]",exchange.getRequestURI());
         String response = "test message,protocol: "+ exchange.getProtocol() ;
